@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            padding: 20px;
+        }
+        .header {
+            background-color: #333;
+            padding: 20px;
+            width: 100%;
+            margin-bottom: 20px;
+            color: aliceblue;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .skills {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 20px;
+            color: aliceblue;
+        }
+        .skill {
+            background-color: #333;
+            border-radius: 8px;
+            padding: 20px;
+            width: 120px;
+            text-align: center;
+        }
+        .features {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .feature {
+            margin: 10px 0;
+            max-width: 600px;
+            
+        }
+        .feature h4 pre {
+            text-align: left;
+        }
+        .footer {
+            background-color: #ff9800;
+            padding: 20px;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .footer h2 {
+            margin: 0;
+        }
+        .project {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            float: right;
+            width: 50%;
+        }
+        .projectimg{
+            float: left;
+            width: 50%;
+        }
+        .project-item {
+            background-color: #333;
+            border-radius: 8px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+        }
+        .featurehead{
+            text-align: center;
+            align-items: center;
+        }
+        .main{
+            width: 100%;
+            background-color: #333;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>ЩО ВИ ОПАНУЄТЕ?</h1>
+    </div>
+
+    <div class="skills">
+        <div class="skill">HTML/CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">React</div>
+        <div class="skill">TypeScript</div>
+        <div class="skill">Angular</div>
+        <div class="skill">GitHub</div>
+    </div>
+
+    <div class="main">
+        <div class="featureshead">
+            <h2 style="text-align: center;">МИ ГАРАНТУЄМО НАШИМ ВИПУСКНИКАМ ПРАЦЕВЛАШТУВАННЯ</h2>
+            <h1 style="text-align: center;">В НЕ ЗАЛЕЖНОСТІ ВІД ВІКУ</h1>
+        </div>
+        <div class="featureimg"></div>
+        <div сlass="features">
+            <div class="feature">
+                <h4>НАВЧІТЬ У ЗРІЛОМУ ВІЦІ</h4>
+                <pre>
+В Україні поширений міф про те, що тільки
+молоді люди можутб освіти IT-напрямок. Але
+максимальний вік нашого студента доходить
+до 63 років.
+                </pre>
+            </div>
+            <div class="feature">Навчіть без знання англійської</div>
+            <div class="feature">Навчіть без профільної освіти та навичок</div>
+            <div class="feature">Навчіть без знання програмування</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class=""></div>
+        <h2>Курс програмування Java з працевлаштуванням:</h2>
+        <div class="projectimg">
+            <img src="imageex31.png" alt="">
+        </div>
+        <div class="project">
+            <div class="project-item">Стажування в IT-компанії</div>
+            <div class="project-item">Три випускних проекти</div>
+            <div class="project-item">Інтенсивність</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
