@@ -5,64 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style type="text/css">
-        .two{
+        .container {
+            width: 868px;
+            height: 950px;
+            margin: 0px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .first {
+            height: 150px;
+            background-color: rgb(251, 255, 0);
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .first form {
+            margin: 0;
+        }
+        .columns {
+            display: flex;
+            gap: 10px;
+            height: 750px;
+        }
+        .column {
             width: 200px;
+            height: 750px;
+            border: 1px solid black;
+        }
+        .two {
             background-color: blue;
-            height: 750px;
-            float: left;
-            margin-right: 10px;
-            border: 1px solid black;
         }
-        .three{
-            width: 200px;
+        .three {
             background-color: red;
-            height: 750px;
-            float: left;
-            margin-left: 10px;
-            margin-right: 10px;
-            border: 1px solid black;
         }
-        .four{
-            width: 200px;
+        .four {
             background-color: white;
-            height: 750px;
-            float: left;
-            margin-left: 10px;
-            margin-right: 10px;
-            border: 1px solid black;
         }
-        .five{
-            width: 200px;
+        .five {
             background-color: red;
-            height: 750px;
-            float: left;
-            margin-left: 10px;
-            border: 1px solid black;
-            
         }
-        .six{
+        .six {
             height: 50px;
             background-color: yellow;
-            width: 868px;
             border: 1px solid black;
         }
     </style>
 </head>
 <body>
-    <div style="width: 868px; height: 950px; margin: 0px auto">
-        <div class="first" style="width: 868px; height: 150px; background-color: rgb(251, 255, 0); border: 1px solid black">
-            <form action="input" style="margin: 50px;">
+    <div class="container">
+        <div class="first">
+            <form action="input">
                 <input type="text" style="height: 30px; width: 180px;">
             </form>
         </div>
-        <div style="height: 750px; width: 868px;">
-            <div class="two"></div>
-            <div class="three"></div>
-            <div class="four"></div>
-            <div class="five"></div>
+        <div class="columns">
+            <div class="column two"></div>
+            <div class="column three"></div>
+            <div class="column four"></div>
+            <div class="column five"></div>
         </div>
         <div class="six"></div>
     </div>
-    
 </body>
 </html>
